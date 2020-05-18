@@ -1,0 +1,77 @@
+baseURL = "https://skycoop.dev/"
+languageCode = "en-us"
+theme = "hello-friend-ng"
+title = "Cooper Benson"
+enableGitInfo = true
+enableEmoji = true
+enableRobotsTXT = true
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+
+[author]
+name = "Cooper Benson"
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+
+[params]
+# Metadata mostly used in document's head
+description = "Cooper Benson's blog and portfolio"
+homeSubtitle = 'SRE @ Quizlet'
+gitUrl = "https://github.com/skycoop/personal-site"
+defaultTheme = "dark"
+
+[params.favicon.color]
+mask = "#252627"
+msapplication = "#0d55a4"
+theme = "#ffffff"
+
+[params.logo]
+logoText = "$ cd /home/skycoop"
+logoHomeLink = "/"
+
+[params.portrait]
+path = "/android-chrome-512x512.png"
+alt = "Portrait"
+
+# Social icons
+[[params.social]]
+name = "github"
+url = "https://github.com/skycoop"
+
+[[params.social]]
+name = "github"
+url = "https://github.com/cooperbenson-qz"
+
+[[params.social]]
+name = "gitlab"
+url = "https://gitlab.com/skycoop"
+
+[[params.social]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/cooper-benson-834664a9/"
+
+[[params.social]]
+name = "keybase"
+url = "https://keybase.io/skycoop"
+
+[languages]
+
+[languages.en]
+subtitle = "Portfolio and Blog"
+weight = 1
+copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+
+[deployment]
+
+[[deployment.targets]]
+name = "gcs"
+URL = "gs://skycoop.dev"
+
+[[deployment.matchers]]
+pattern = "^.+\\.(js|css|svg|ttf|html|xml|json)$"
+gzip = true
+
+[[deployment.matchers]]
+pattern = "^.+\\.(png|jpg)$"
+gzip = false

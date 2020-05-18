@@ -1,0 +1,29 @@
+name: 'Deploy site'
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        submodules: true  # Fetch Hugo themes
+        fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+        lfs: true
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        extended: true
+    - name: Log into GCP
+      uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
+      with:
+        service_account_key: ${{ secrets.GCP_SA_KEY }}
+        export_default_credentials: true
+    - name: Build site
+      run: hugo
+    - name: Deploy site to GCS
+      run: hugo deploy
