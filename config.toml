@@ -61,17 +61,3 @@ url = "https://keybase.io/skycoop"
 subtitle = "Portfolio and Blog"
 weight = 1
 copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-
-[deployment]
-
-[[deployment.targets]]
-name = "gcs"
-URL = "gs://skycoop.dev"
-
-[[deployment.matchers]]
-pattern = "^.+\\.(js|css|svg|ttf|html|xml|json)$"
-gzip = true
-
-[[deployment.matchers]]
-pattern = "^.+\\.(png|jpg)$"
-gzip = false
