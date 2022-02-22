@@ -17,7 +17,7 @@ category = "categories"
 [params]
 # Metadata mostly used in document's head
 description = "Cooper Benson's blog and portfolio"
-homeSubtitle = 'SRE @ Quizlet'
+homeSubtitle = 'Platform Engineer @ Quizlet'
 gitUrl = "https://github.com/skycoop/personal-site"
 defaultTheme = "dark"
 
