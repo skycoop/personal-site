@@ -80,6 +80,7 @@ disableReadOtherPosts = false
 # Per default, this option is off. 
 # The theme is respecting the prefers-color-scheme of the operating systeme. 
 # With this option on, the page user is able to set the scheme he wants. 
+#
 enableThemeToggle = false
 
 # Sharing buttons
@@ -94,7 +95,7 @@ enableSharingButtons = true
 #
 # Enables the global language menu.
 #
-enableGlobalLanguageMenu = true
+enableGlobalLanguageMenu = false
 
 # Integrate Javascript files or stylesheets by adding the url to the external assets or by
 # linking local files with their path relative to the static folder, e.g. "css/styles.css"
@@ -104,7 +105,7 @@ customJS = []
 
 # Toggle this option need to rebuild SCSS, requires extended version of Hugo
 #
-justifyContent = true # Set "text-align: justify" to .post-content.
+# justifyContent = true # Set "text-align: justify" to .post-content.
 
 # Custom footer 
 # If you want, you can easily override the default footer with your own content. 
@@ -135,7 +136,7 @@ logoHomeLink = "/"
 # Set true to remove the logo cursor entirely.
 # logoCursorDisabled = false
 # Set to a valid CSS color to change the cursor in the logo.
-# logoCursorColor    = "#67a2c9"
+logoCursorColor = "#0d55a4"
 # Set to a valid CSS time value to change the animation duration, "0s" to disable.
 # logoCursorAnimate  = "2s"
 
@@ -188,12 +189,14 @@ subtitle = "Portfolio and Blog"
 weight = 1
 copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
-# [menu]
-# [[menu.main]]
-# identifier = "about"
-# name = "About"
-# url = "about/"
-# [[menu.main]]
-# identifier = "posts"
-# name = "Posts"
-# url = "posts/"
+[menu]
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "about/"
+
+[[menu.main]]
+identifier = "posts"
+name = "Posts"
+url = "posts/"
