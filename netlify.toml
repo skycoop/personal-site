@@ -1,0 +1,22 @@
+[build]
+command = "hugo"
+publish = "public"
+
+[build.environment]
+HUGO_VERSION = "0.109.0"
+GIT_LFS_ENABLED = "true"
+
+[[plugins]]
+package = "@netlify/plugin-lighthouse"
+
+[[plugins]]
+package = "netlify-plugin-hugo-cache-resources"
+
+[[plugins]]
+package = "netlify-plugin-checklinks"
+
+[plugins.inputs]
+todoPatterns = ["public/posts", "public/posts/index.xml"]
+
+[[context.production.plugins]]
+package = "netlify-plugin-submit-sitemap"
