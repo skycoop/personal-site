@@ -1,6 +1,6 @@
 ---
 title: "Circumventing Branch Protection for Fun and GitOps"
-date: 2020-11-19T12:00:00-07:00
+date: 2020-11-19
 draft: false
 toc: false
 images:
