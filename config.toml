@@ -61,7 +61,7 @@ images = [""]
 
 # Home subtitle of the index page.
 #
-homeSubtitle = "Platform Engineer @ Quizlet"
+homeSubtitle = "Site Reliability Engineer @ Deno"
 
 # Set a background for the homepage
 # backgroundImage = "assets/images/background.jpg"
@@ -166,10 +166,6 @@ url = "https://twitter.com/skycoopinspace"
 [[params.social]]
 name = "github"
 url = "https://github.com/skycoop"
-
-[[params.social]]
-name = "github"
-url = "https://github.com/cooperbenson-qz"
 
 [[params.social]]
 name = "gitlab"
