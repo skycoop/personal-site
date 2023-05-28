@@ -15,5 +15,11 @@ package = "netlify-plugin-hugo-cache-resources"
 [[plugins]]
 package = "netlify-plugin-checklinks"
 
+    [plugins.inputs]
+    checkExternal = false
+    skipPatterns = [
+        "flags"
+    ]
+
 [[context.production.plugins]]
 package = "netlify-plugin-submit-sitemap"
