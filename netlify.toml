@@ -7,6 +7,9 @@ HUGO_VERSION = "0.112.3"
 GIT_LFS_ENABLED = "true"
 
 [[plugins]]
+package = "@netlify/plugin-lighthouse"
+
+[[plugins]]
 package = "netlify-plugin-hugo-cache-resources"
 
 [[plugins]]
